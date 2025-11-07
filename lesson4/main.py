@@ -34,7 +34,7 @@ import json
 
 def ex3(dict):
     with open('data.json', 'w') as f:
-            json.dump(dict)
+        json.dump(dict, f)
     with open('data.json', 'r') as f:
         data = json.load(f)
         print(data)
